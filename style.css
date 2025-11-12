@@ -1,0 +1,62 @@
+/* CSS CARROSEL */
+.carousel-container {
+  width: 100%;
+  height: 500px; /* Aumente se quiser */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Linha horizontal com os slides */
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Cada slide */
+.carousel-slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat;
+}
+
+/* Botões */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.carousel-btn.voltar { 
+  left: 10px; 
+}
+.carousel-btn.prox { 
+  right: 10px; 
+}
+
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+/*CENTRALIZAR FORM    #F9F6F0*/
+.form-centro {
+    width: 60%;             
+    margin: 0 auto;         
+    text-align: center;     
+    padding: 20px;          
+}
+
+/*BACKGROUND*/
+body {
+    background-color: #F9F6F0;
+}

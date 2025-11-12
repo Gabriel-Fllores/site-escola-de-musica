@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css"> <!-- coloca o css -->
+  <title>Cadastro</title>
+</head>
+<body>
+<!-- carrossel -->
+<div class="carousel-container">
+  <div class="carousel-track">
+   <div class="carousel-slide" style="background-image: url('https://placehold.co/1200x500/3498db/ffffff?text=Imagem+1');"></div>
+   <div class="carousel-slide" style="background-image: url('https://placehold.co/600x300/2ecc71/ffffff?text=Imagem+2');"></div>
+   <div class="carousel-slide" style="background-image: url('https://placehold.co/600x300/e74c3c/ffffff?text=Imagem+3');"></div>
+  </div>
+
+  <!-- Botões -->
+  <button class="carousel-btn voltar">&#10094;</button>
+  <button class="carousel-btn prox">&#10095;</button>
+</div>
+
+  <!-- form -->
+  <form onsubmit="return verifica()">
+    <h2>Cadastro Escola de Musica - "Para Seus Ouvidos"</h2>
+    <h3>Um pouco sobre nos</h3>
+    <p>A Escola de Música Para Seus Ouvidos é uma instituição dedicada à formação musical de pessoas de todas as idades. Nosso propósito é tornar o aprendizado acessível, acolhedor e motivador, oferecendo um ambiente onde cada aluno pode desenvolver suas habilidades musicais no seu próprio ritmo.
+    <p>Com uma equipe preparada e espaços adequados para prática e estudo, buscamos proporcionar experiências que vão além das aulas, estimulando a criatividade, a expressão pessoal e o contato com diferentes estilos musicais. Acreditamos que a música transforma, inspira e abre portas para novas oportunidades.</p>
+    <h3>Nosso Objetivo</h3>
+    <p>Nosso objetivo é oferecer um ensino de qualidade, apoiar o desenvolvimento artístico de cada estudante e contribuir para que a música faça parte do seu dia a dia. Seja qual for o instrumento escolhido, estamos prontos para acompanhar cada passo dessa jornada musical.</p>
+    
+    <div class="form-centro">
+      <h3>Gostou? Incsreva-se!</h3>
+      <p>Nome: <input type="text" id="nome"> Email: <input type="email" id="email"></p>
+      <p>Endereco: <input type="text" id="end"> Senha: <input type="password" id="senha"></p>
+      <p>Telefone: <input type="number" id="telefone"> Sexo:
+      <select id="sexo" name="sexo">
+        <option value="seleciona">Selecione...</option>
+        <option value="masc">MASCULINO</option>
+        <option value="fem">FEMININO</option>
+        <option value="no">NAO OPINAR</option>
+      </select></p>
+      <p>Data de nascimento: <input type="date" id="data"> Instrumento desejado:
+        <select id="inst" name="inst">
+        <option value="escolha">Selecione...</option>
+        <option value="vio">VIOLAO</option>
+        <option value="pia">PIANO</option>
+        <option value="bateria">BATERIA</option>
+        <option value="canto">CANTO</option>
+      </select></p>
+    
+      <input type="reset">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+ 
+<script src="script.js"></script> <!-- coloca o javascript -->
+</body>
+</html>
