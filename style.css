@@ -48,15 +48,44 @@
   background: rgba(0,0,0,0.8);
 }
 
-/*CENTRALIZAR FORM    #F9F6F0*/
-.form-centro {
-    width: 60%;             
-    margin: 0 auto;         
-    text-align: center;     
-    padding: 20px;          
+/* Carrossel texto */
+.carousel-texto {
+    position: absolute;
+    top: 50%;               /* centraliza verticalmente */
+    left: 50%;              /* centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* ajusta ao centro exato */
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background: rgba(0,0,0,0.45);
+    z-index: 2;
 }
 
-/*BACKGROUND*/
+/* Título Carrossel*/
+.carousel-texto h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* titulo Cadastro Escola de Musica*/
+.titulo-centro {
+    text-align: center;
+}
+
+/*CENTRALIZAR FORM*/
+.form-centro {
+    width: 60%;
+    margin: 40px auto;
+    text-align: left;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0002;
+    text-align: center;
+}
+
+/*Site em geral*/
 body {
     background-color: #F9F6F0;
+    font-family: 'Montserrat', sans-serif;
 }
