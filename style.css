@@ -1,5 +1,5 @@
 /* CSS CARROSEL */
-.carousel-container {
+.carrossel-container {
   width: 100%;
   height: 500px; /* Aumente se quiser */
   position: relative;
@@ -7,14 +7,14 @@
 }
 
 /* Linha horizontal com os slides */
-.carousel-track {
+.carrossel-track {
   display: flex;
   height: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
 /* Cada slide */
-.carousel-slide {
+.carrossel-slide {
   position: relative;
   min-width: 100%;
   height: 100%;
@@ -24,7 +24,7 @@
 }
 
 /* Botões */
-.carousel-btn {
+.carrossel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -37,19 +37,19 @@
   border-radius: 5px;
 }
 
-.carousel-btn.voltar { 
+.carrossel-btn.voltar { 
   left: 10px; 
 }
-.carousel-btn.prox { 
+.carrossel-btn.prox { 
   right: 10px; 
 }
 
-.carousel-btn:hover {
+.carrossel-btn:hover {
   background: rgba(0,0,0,0.8);
 }
 
 /* Carrossel texto */
-.carousel-texto {
+.carrossel-texto {
     position: absolute;
     top: 50%;               /* centraliza verticalmente */
     left: 50%;              /* centraliza horizontalmente */
@@ -62,7 +62,7 @@
 }
 
 /* Título Carrossel*/
-.carousel-texto h1 {
+.carrossel-texto h1 {
     font-size: 45px;
     font-weight: bold;
 }
@@ -74,7 +74,7 @@
 
 /*CENTRALIZAR FORM*/
 .form-centro {
-    width: 60%;
+    width: 30%;
     margin: 40px auto;
     text-align: left;
     background: #ffffff;
@@ -83,6 +83,30 @@
     box-shadow: 0 0 10px #0002;
     text-align: center;
 }
+
+/* Estilo botões form */
+.form-centro button,
+.form-centro input[type="reset"] {
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.2s;
+}
+
+/* Botão ENVIAR */
+.form-centro button {
+    background-color: #0077cc;
+    color: white;
+}
+
+.form-centro button:hover {
+    background-color: #005fa3;
+}
+
+
 
 /*Site em geral*/
 body {

@@ -1,8 +1,8 @@
 //carrossel
 document.addEventListener("DOMContentLoaded", function() {
 
-    let track = document.querySelector(".carousel-track");
-    let slides = document.getElementsByClassName("carousel-slide");
+    let track = document.querySelector(".carrossel-track");
+    let slides = document.getElementsByClassName("carrossel-slide");
     let btnVoltar = document.querySelector(".voltar");
     let btnProx = document.querySelector(".prox");
 
