@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css"> <!-- coloca o css -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <!-- fonte titulo-->
-  <title>Cadastro</title>
+  <title>Para Seus Ouvidos</title>
 </head>
 <body>
 <!-- carrossel -->
@@ -59,18 +59,33 @@
         <option value="no">NAO OPINAR</option>
       </select></p>
       <p>Data de nascimento: <input type="date" id="data"></p>
-      <p>Instrumento desejado:
-       <select id="inst" name="inst">
-        <option value="escolha">Selecione...</option>
-        <option value="vio">VIOLAO</option>
-        <option value="pia">PIANO</option>
-        <option value="bateria">BATERIA</option>
-        <option value="canto">CANTO</option>
-      </select></p>
-    
-      <input type="reset">
-      <button type="submit">Enviar</button>
-    </div>
+      <div class="instrumentos-box">
+        <p>Instrumentos desejados:</p>
+
+        <label class="check">
+          <input type="checkbox" name="inst[]" value="vio">
+          Violão
+        </label>
+
+        <label class="check">
+          <input type="checkbox" name="inst[]" value="pia">
+          Piano
+        </label>
+
+        <label class="check">
+          <input type="checkbox" name="inst[]" value="bateria">
+          Bateria
+        </label>
+
+        <label class="check">
+          <input type="checkbox" name="inst[]" value="canto">
+          Canto
+        </label>
+      </div>
+          
+            <input type="reset">
+            <button type="submit">Enviar</button>
+          </div>
 </form>
  
 <script src="script.js"></script> <!-- coloca o javascript -->
